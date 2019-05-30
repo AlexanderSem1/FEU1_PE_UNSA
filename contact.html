@@ -29,9 +29,44 @@
             
         </header>
         
-        <div class="below-fold">
-            <h1>Contact US</h1>
-       </div>
+       
+        
+        <form class="form-wrapper">
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <h4 class="">UN Student Association in Norway</h4>
+            </div>
+            
+            <div class="form-fn-ln">
+            <div class="form-fn-wrapper">
+                <br>Name:<br>
+                <input type="text" title="First Name" class="contact-form form-fn placeholder-txt" placeholder="Required" id="firstName">
+                <span class="error" id="firstNameError">Please provide your name.</span>
+            </div>
+            <div class="form-ln-wrapper">
+                <br>Last Name: <br>
+                <input type="text" title="Last name" class="contact-form form-ln placeholder-txt" placeholder="Required" id="lastName">
+                 <span class="error" id="lastNameError">Please provide your last name.</span>
+            </div>
+            </div>
+            <div class="email-wrapper">
+                <br>Email:<br>
+                <input type="email" title="email" class="contact-form email-form placeholder-txt" id="email" placeholder="Required">
+                <span class="error" id="emailError">Please provide a correct email address</span>
+            </div>
+            <div class="subject-wrapper">
+                <br>Subject:<br>
+                <input title="free text" type="text" class="contact-form placeholder-txt" placeholder="Subject - optional" id="subject">
+            </div>
+            <div class="message-wrapper">
+                <br>Message:<br>
+                <textarea title="free text" class="contact-form placeholder-txt" id="form-message" placeholder="Please write your message here." rows="5" cols="50"></textarea>
+            </div>
+            <div class="form-btn-wrapper">
+                <button type="submit" id="submitContact" value="submit" class="form-btn" onclick="return validateMyForm()">Submit</button>
+            </div>
+        </form>
+    
         
         
         
@@ -61,11 +96,11 @@
         <div class="email-sub-wrapper">
         <div class="email-sub-input">
             <input class="email" type="text" name="email" id="email_ID" placeholder="Your email...">
-            <span class="error" id="emailError">Please enter a correct email address</span>
+            <span class="error-sub" id="emailSubError">Enter valid email address.</span>
         </div>
         
         <div class="email-sub-btn">
-            <button class="email-sub-button" type="submit" value="submit" onclick="return validateMyForm()">Subscribe</button>
+            <button class="email-sub-button" type="submit" value="submit" onclick="return validateSubForm()">Subscribe</button>
             
         </div>
         </div>
@@ -94,6 +129,6 @@
         
         
 
-    
+    <script src="unsa.js"></script>
 	</body>
 </html>

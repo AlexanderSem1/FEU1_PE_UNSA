@@ -9,7 +9,7 @@ body{
 /* Navigation menu styling */
 
 .nav-bg-img{
-    background-image:url(images/climate_wide.png); 
+    background-image:url(images/climate_wide_photo_cred.jpg); 
     background-size: cover;
     background-repeat: no-repeat; 
     height: 800px; 
@@ -100,6 +100,7 @@ body{
 .below-fold{
     text-align: center;
     font-size: 90%; 
+    color: #6D6D6D;
 }
 
 
@@ -207,26 +208,24 @@ body{
 
 .SDG-goals-wrapper{
     text-align: center; 
+    margin: 0 10%; 
 }
 
 .SDG-goals-wrapper p{
-    margin: 0 auto; 
-    /*border-left: 3px solid #648FCB; */
-    padding-left: 10px; 
-    /*font-size: 120%;*/
     color: #707070; 
     text-align: left; 
-    margin: 0 10% 40px;
+    
     
 }
 
 .SDG-goals-wrapper img{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .SDG-goals-wrapper img:hover{
     opacity: 0.6;  
+     border: 1px solid rgba(0,0,0,0); 
 }
 
 
@@ -308,8 +307,22 @@ a{
 }
 
 .error{
-    color: yellow; 
+    color: white;
+    background-color: red;
+    margin: 5%; 
+    padding: 1%; 
+    border-radius: 4px; 
     display: none; 
+}
+
+.error-sub{
+    color: white; 
+    background-color: red; 
+    padding: 10px;  
+    display: none; 
+    margin-top: 10px; 
+    border-radius: 2px; 
+    font-size: 90%; 
 }
 
 .email{
@@ -361,6 +374,31 @@ a{
 
 .about-us .about-us-intro-text{
     font-size: 120%;
+}
+
+.click-down{
+    float: right;
+}
+
+#moreReadingTrigger:hover{
+    cursor: pointer; 
+}
+
+#moreReadingTrigger{
+    padding: 10px 0; 
+    color: white;
+    background-color:  #648FCB; 
+    border-radius: 3px;    
+}
+
+#moreReadingTrigger span, i{
+    margin: 0 30px; 
+}
+
+
+
+.accordian{
+    display: none; 
 }
 
 
@@ -458,6 +496,10 @@ a{
     max-width: 400px; 
 }
 
+.hr-no-btm{
+    margin-bottom: 50px; 
+}
+
 
 .UN-localdescrp .local-social-icons a{
     text-decoration: none; 
@@ -502,6 +544,107 @@ a{
 .get-invl-intr-text{
     padding: 5% 0; 
 }
+
+.SDG-list-wrapper{
+    margin: 20px 10%; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px; 
+    border: 1px solid #c1c1c1; 
+    border-radius: 4px; 
+}
+
+.SDG-list-Square img{
+    padding: 25px;
+    width: 100%; 
+    border-radius: 28px;
+}
+
+.SDG-list-req{
+    padding: 25px;
+    grid-column-start: 2;
+    grid-column-end: 5; 
+}
+
+.SDG-list-req img{
+    width: 100%; 
+    border-radius: 3px; 
+}
+
+.SDG-list-req p{
+    margin: 5px 0 0; 
+    font-size: 55%;
+}
+
+.SDG-list-wrapper:hover{
+    opacity: 0.8; 
+    transform: scale(1.03); 
+     transition: all 0.8s;
+    text-decoration: underline; 
+}
+
+
+/* Styling of contact form */
+
+.contact-us{
+    margin: 0 10% 20px; ;  
+    text-align: left;  
+    font-size: 100%; 
+    color: #7d7d7d; 
+}
+
+.form-wrapper{
+    color: #7d7d7d; 
+    margin: 0 10% 10%; 
+}
+
+.contact-form{
+    padding: 10px 20px; 
+    margin: 5px 0; 
+    min-width: 350px; 
+    min-height: 20px; 
+    border-radius: 4px; 
+    border: 1px solid #c1c1c1;
+}
+
+
+.email-wrapper, .message-wrapper, .subject-wrapper, .form-fn-ln, .form-btn-wrapper{
+    margin: 0 10%; ; 
+}
+
+
+
+.form-btn-wrapper .form-btn{
+    padding: 10px 40px; 
+    margin: 15px 3px;
+    color: white; 
+    background-color:  #648FCB;
+    font-size: 100%; 
+    border-radius: 4px; 
+}
+
+.form-btn-wrapper .form-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.6s; 
+}
+
+.placeholder-txt{
+    font-style: oblique;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -565,6 +708,10 @@ a{
 }
     
     
+.SDG-list-req p{
+    font-size: 80%; 
+}
+    
     
 
     
@@ -588,7 +735,7 @@ a{
 @media (min-width: 768px) {
     
 .nav-bg-img{
-    background-image:url(images/climate_wide.png);  
+    background-image:url(images/climate_wide_photo_cred.jpg);  
     height: 1000px; 
 }
     
@@ -775,7 +922,7 @@ a{
 .gmap_wrapper h2{
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 180%; 
+    font-size: 160%; 
     margin-top: 10px;
 }
 
@@ -789,7 +936,7 @@ a{
 .UN-localdescrp h3{
     margin: 5px; 
     margin-left: 0;
-    font-size: 150%;
+    font-size: 120%;
     }
     
 .UN-localdescrp h2{ 
@@ -801,15 +948,15 @@ a{
 
     
 .about-us .about-us-intro-text{
-    font-size: 140%;
+    font-size: 105%;
 }
     
 .about-us h2{
-    font-size: 200%;
+    font-size: 160%;
 }
     
 .about-us h3{
-    font-size: 180%;
+    font-size: 160%;
     padding: 0 10%;
     margin: 60px;
 }
@@ -825,7 +972,7 @@ a{
 }
     
 .ind-bio-text{ 
-    font-size: 140%; 
+/*    font-size: 100%; */
 }
 
     
@@ -862,6 +1009,35 @@ a{
 .footer-wrapper p, .footer-wrapper {
     font-size: 110%;     
     }
+    
+    
+/* Styling of Get involved*/
+    
+.SDG-list-req p{
+    font-size: 110%;
+     margin: 13px 0 0; 
+}
+    
+.get-invl-intr-text{
+        font-size: 130%;
+    }       
+    
+    
+/* Contact us styling */
+    
+.form-wrapper #email, .form-wrapper #subject, .form-wrapper #form-message, .form-fn, .form-ln {
+    min-width: 600px;   
+    }
+    
+.form-wrapper{
+    font-size: 130%;     
+    margin: 0 20% 10%; 
+}
+
+    
+    
+    
+
 
 
 
@@ -887,7 +1063,7 @@ a{
 .exec-team-wrapper{
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
-        
+    margin: 0 10%;
 }
     
 .SDG-goals-wrapper{
@@ -895,6 +1071,11 @@ a{
     grid-template-columns: repeat(2, 1fr);   
     grid-gap: 3px; 
     }
+    
+.SDG-list-req p{
+    font-size: 140%; 
+     margin: 20px 0 0; 
+}
     
     
     
