@@ -9,10 +9,10 @@ body{
 /* Navigation menu styling */
 
 .nav-bg-img{
-    background-image:url(images/climate_wide_photo_cred.jpg); 
+    background-image:url(images/climate_wide.jpg); 
     background-size: cover;
     background-repeat: no-repeat; 
-    height: 800px; 
+    height: 700px; 
     left: 0;
     top: 0; 
 }
@@ -22,7 +22,7 @@ body{
 }
 
 .nav_wrapper .logo img{
-    width: 220px; 
+    width: 180px; 
     margin: 20px 0 0 20px;  
 }
 
@@ -33,7 +33,7 @@ body{
     display: block;
     text-align: right; 
     padding: 5px 15px;
-    margin-right: 35px;
+    margin-right: 15px;
     border-bottom: 4px solid rgba(0,0,0,0.0); 
 }
 
@@ -42,14 +42,14 @@ body{
     min-height: 200px;
 }
 
-.nav_wrapper a.icon {
+.nav_wrapper .icon{
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 30px;
+    padding: 30px 0;
     text-decoration: none;
-    margin: 10px 20px 0 0; 
+    margin: 10px 30px 0; 
     font-size: 150%; 
     color: white; 
 }
@@ -103,6 +103,10 @@ body{
     color: #6D6D6D;
 }
 
+.top-header{
+    margin-top: 120px;
+}
+
 
 .fact-box-wrapper{
     text-align: center; 
@@ -110,7 +114,7 @@ body{
     font-size: 120%;
 }
 
-.fact-box i{
+.fact-box a{
     border-radius: 100%; 
     background-color: #648FCB;
     color: white; 
@@ -131,26 +135,91 @@ body{
     margin-bottom: 100px; 
 }
 
-.fact-box i:hover{
+.fact-box a:hover{
     transform: scale(1.1); 
     transition: all 0.6s;
 }
+
+/* Count down timer styling */
+
+#cdheader {
+/*  margin: 40px 0 20px;*/
+/*  font-size: 130%;*/
+    color: #6d6d6d;
+/*  text-transform: uppercase;*/
+    padding-bottom: 5px;
+    
+}
+#container {
+    text-align: center;
+/*    margin-bottom: 60px; */
+    margin: 0 10% 60px;
+}
+
+.about-countdown-container {
+  align-content: center;
+    text-align: center; 
+  margin-bottom: 60px; 
+}
+
+#cdtimer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cdbox, .cdmessage {
+  width: 80px;
+  background: #f2f2f2;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+}
+.cdvalue {
+  font-size: 150%;
+  font-weight: bold;
+  color: #418FDE;
+  margin: 0.2em 0 0 0;
+}
+.cdlabel {
+  margin-bottom: 15px;
+  color: #33617a;
+    font-size: 80%;
+}
+.cdmessage{
+  width: 23em;
+  padding: 3em;
+}
+
+.seminar-location{
+    padding: 20px;
+    margin-top: 30px; 
+}
+
+.below-fold .count-down-header{
+    padding-bottom: 0; 
+    color: #6D6D6D;
+}
+
+.text-upper{
+    text-decoration: underline; 
+}
+
+
 
 
 /* Call to action box styling*/
 
 .cta-wrapper{
-    margin: 0 auto; 
+    margin: 5% 0; 
     text-align: center; 
-    color: white; 
-    background-color: #648FCB;
-    padding-bottom: 40px; 
-    margin: 3px 0; 
-   
+    color: #6D6D6D;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2; 
+    border-radius: 5px;
 }
 
 .cta-wrapper-grid{
-    margin: 0 4px; 
+    margin: 0 10%; 
     
 }
 
@@ -163,15 +232,16 @@ body{
 }
 
 .cta-wrapper .cta-text{
-    padding: 10px 50px 40px 50px; 
+/*    padding: 10px 50px 40px 50px; */
     margin: 0 10%;
-    font-size: 110%; 
+/*    font-size: 110%; */
 }
 
 .cta-wrapper a{
     text-decoration: none; 
-   
 }
+
+
 
 .cta-button{
     color: #648FCB; 
@@ -180,19 +250,25 @@ body{
     font-size: 120%;
     font-weight: bold; 
     border-radius: 4px; 
-    min-width: 240px; 
-    max-width: 260px; 
+    min-width: 120px; 
+    max-width: 140px; 
+}
+
+.cta-button-2{
+    background-color: #648FCB; 
+    color: white;
+    margin-bottom: 50px;
 }
 
 .cta-button:hover{
-    transform: scale(1.1); 
+    transform: scale(1.05); 
     border: 2px solid  #648FCB; 
     transition: all 0.4s;
 }
 
 
 .SDG-wheel{
-    margin: 100px 10% 60px;
+    margin: 10% 10%;
     text-align: center; 
 }
 
@@ -208,7 +284,7 @@ body{
 
 .SDG-goals-wrapper{
     text-align: center; 
-    margin: 0 10%; 
+    margin: 5% 10%; 
 }
 
 .SDG-goals-wrapper p{
@@ -262,7 +338,7 @@ a{
 
 
 .footer-wrapper{
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: #333; 
     color: white; 
     text-align:  center; 
     padding: 20px; 
@@ -275,6 +351,10 @@ a{
     font-size: 120%; 
 }
 
+.social-icons{
+    margin-bottom: 30px;    
+    }
+
 .footer-wrapper p{
     margin-top: 0; 
     margin-bottom: 20px; 
@@ -284,20 +364,14 @@ a{
     margin-bottom: 5px; 
 }
 
-.email-sub-wrapper{
-    margin-bottom: 30px; 
-    display: grid; 
-    grid-template-columns: repeat(6, 1fr); 
+.footer-wrapper a{
+   text-decoration: none;
+    color: white;
 }
 
-.email-sub-input{
-    grid-column: 3/4;
-    grid-row: 1;   
-}
 
-.email-sub-btn{
-    grid-column: 4/5;
-    grid-row: 1;   
+.email-sub-btn label{
+     color: #333;  
 }
 
 
@@ -338,7 +412,7 @@ a{
     padding: 10px 40px; 
     background-color: #648FCB; 
     border-radius: 4px; 
-    margin-left: 20px; 
+    margin-top: 20px; 
     color: white; 
     border: none; 
 }
@@ -380,21 +454,22 @@ a{
     float: right;
 }
 
-#moreReadingTrigger:hover{
+#moreReadTrigger:hover{
     cursor: pointer; 
 }
 
-#moreReadingTrigger{
+#moreReadTrigger{
     padding: 10px 0; 
-    color: white;
-    background-color:  #648FCB; 
-    border-radius: 3px;    
+    color: #648FCB;
+    margin: 20px -5px 0 -10px; 
+/*    background-color:  #648FCB; */
+    border-radius: 2px;
+    border: 2px solid #648FCB; 
 }
 
-#moreReadingTrigger span, i{
+#moreReadTrigger span, i{
     margin: 0 30px; 
 }
-
 
 
 .accordian{
@@ -493,7 +568,7 @@ a{
 .about-us-hr{
     margin-top: 8%;
     margin-bottom: 8%;
-    max-width: 400px; 
+    max-width: 300px; 
 }
 
 .hr-no-btm{
@@ -514,12 +589,46 @@ a{
     
 }
 
-
-
 .UN-localdescrp .local-social-icons a:hover{
     transform: scale(1.4);
     transition: all 0.4s;
 }
+
+
+/* About US - Instagram pictures layout*/
+
+.Instagram h2{
+    margin: 0 10%; 
+    text-align: center; 
+    color: #7d7d7d; 
+    margin-top: 80px; 
+}
+#insta-feed{
+    margin: 5% 10% 15%; 
+}
+
+.instapic{
+    text-align: center; 
+}
+
+
+.instapic img{
+    width: 80%; 
+    border-radius: 5px; 
+    margin: 10px; 
+    border: 2px solid #bbb;
+    padding: 10px;
+    object-fit: cover; 
+    height: 200px;
+    width: 300px; 
+}
+
+.instapic img:hover{
+    opacity: 0.7; 
+}
+
+
+
 
 
 /* Get involved Styling */
@@ -595,13 +704,13 @@ a{
 
 .form-wrapper{
     color: #7d7d7d; 
-    margin: 0 10% 10%; 
+/*    margin: 0 10% 10%; */
 }
 
 .contact-form{
     padding: 10px 20px; 
     margin: 5px 0; 
-    min-width: 350px; 
+    min-width: 250px; 
     min-height: 20px; 
     border-radius: 4px; 
     border: 1px solid #c1c1c1;
@@ -619,7 +728,7 @@ a{
     margin: 15px 3px;
     color: white; 
     background-color:  #648FCB;
-    font-size: 100%; 
+    font-size: 110%; 
     border-radius: 4px; 
 }
 
@@ -628,69 +737,76 @@ a{
     transition: all 0.6s; 
 }
 
-.placeholder-txt{
-    font-style: oblique;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Only for Contact form width */ 
+@media (min-width: 500px){
+    
+.contact-form{
+    min-width: 350px; 
+}
+    
+
+    
+
+    
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -712,7 +828,47 @@ a{
     font-size: 80%; 
 }
     
+#insta-feed{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+}   
     
+.nav_wrapper .logo img{
+    width: 220px; 
+}
+    
+.email-sub-wrapper{
+    margin-bottom: 30px; 
+/*
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+*/
+}
+
+/*
+.email-sub-input{
+    grid-column: 3/4;
+    grid-row: 1;   
+}
+*/
+
+.email-sub-btn{ 
+/*
+    grid-column: 4/5;
+    grid-row: 1;   
+*/
+
+   
+    
+}
+    
+.contact-form{
+    min-width: 350px; 
+}
+    
+ 
+
+
 
     
 
@@ -735,7 +891,7 @@ a{
 @media (min-width: 768px) {
     
 .nav-bg-img{
-    background-image:url(images/climate_wide_photo_cred.jpg);  
+    background-image:url(images/climate_wide.jpg);  
     height: 1000px; 
 }
     
@@ -869,10 +1025,10 @@ a{
     
 .cta-wrapper-grid{
     display:grid; 
-    grid-template-columns: repeat(2, 1fr);   
-    grid-gap: 3px; 
-    margin-top: 100px; 
-    margin-top: 100px; 
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 0 20px; 
+    grid-gap: 5%; 
+    margin: 100px 5% 0; 
 }
     
 .cta-wrapper{
@@ -975,6 +1131,7 @@ a{
 /*    font-size: 100%; */
 }
 
+
     
    
     
@@ -991,6 +1148,7 @@ a{
     }
 .email-sub-wrapper .email-sub-button{
     font-size: 110%;     
+    margin-top: 0;
     } 
     
 .email-sub-wrapper .email-sub-button:hover{
@@ -1009,6 +1167,25 @@ a{
 .footer-wrapper p, .footer-wrapper {
     font-size: 110%;     
     }
+    
+.email-sub-wrapper{
+    margin-bottom: 30px; 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+}
+
+.email-sub-input{
+    grid-column: 3/4;
+    grid-row: 1;   
+}
+
+.email-sub-btn{ 
+    grid-column: 4/5;
+    grid-row: 1;   
+    margin-left: 20px; 
+    padding-top: 0; 
+    
+}
     
     
 /* Styling of Get involved*/
@@ -1032,6 +1209,11 @@ a{
 .form-wrapper{
     font-size: 130%;     
     margin: 0 20% 10%; 
+}
+    
+.placeholder-txt{
+    font-size: 65%; 
+    color: #7d7d7d; 
 }
 
     
@@ -1076,6 +1258,11 @@ a{
     font-size: 140%; 
      margin: 20px 0 0; 
 }
+    
+#insta-feed{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+} 
     
     
     

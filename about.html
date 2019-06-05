@@ -6,15 +6,14 @@
         <meta name="keywords" content="UNSA, student association, UNTW, UN Theme week, SDG, student, students, UN Student association" /> 
         <link href="unsa.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <script src="unsa.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 		<title>Home - UN Student Association Norway</title>
 	</head>
 	<body>
         <header class="nav_wrapper nav-bg-color">
             <div class="nav_menu_wrapper">
             <div class="logo">
-                <a href="index.html"><img src="images/UNSA_Logo_Text_White.png" alt="UN Student Association Norway logo" width="280px"></a>
+                <img src="images/UNSA_Logo_Text_White.png" alt="UN Student Association Norway logo" width="280px">
             </div>
             
             <div id="pop-menu" class="top-nav">
@@ -23,7 +22,7 @@
                 <a href="get-involved.html">Get Involved</a>
                 <a href="contact.html">Contact</a>
             </div>
-                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                <a href="javascript:void(0);" class="icon fa fa-bars" onclick="myFunction()"></a> 
             </div>
             
             
@@ -45,7 +44,7 @@
                 </p>
             </div>
             
-            <div id="moreReadingTrigger">
+            <div id="moreReadTrigger">
                 <span>Read More </span><i class="fa fa-chevron-down click-down"  aria-hidden="true"></i>
             </div>
             <div id="moreReading" class="accordian">
@@ -55,14 +54,7 @@
                 Spread-out across the entire Norway, we are an organisation driven by progressive ideas, bold actions, and a strong foundation of support. We organise member meetings, seminars, debates and social gatherings of various kinds in order to shed light on important issues we believe are worth discussing. At the very fundament of our organisation is the belief in a sustainable world in which the universal human rights are for all.</p>
             </div>
         </article>
-        
-        
-        
-       
     
-        
-        
-        
         
         
         <hr class="about-us-hr">
@@ -112,6 +104,7 @@
         </div>
         
 
+<!--
         <div class="gmap_wrapper"  onclick="unAgder()">
             <h2>UN Student Association in Agder</h2>
         <div class="UN-localdescrp">
@@ -129,6 +122,7 @@
             </div>
         </div>    
         </div>
+-->
         
         <hr class="about-us-hr">
         
@@ -206,9 +200,11 @@
         
          <hr class="about-us-hr">
         
-        
-        
-        
+    <div class="Instagram">
+        <h2>Latest Update from Our Instagram Feed</h2>    
+        <div id="insta-feed">
+        </div>
+    </div>    
         
         
         
@@ -228,17 +224,14 @@
         </div>
         
         <div class="email-sub-btn">
+            <label for="email_ID">.</label>
             <button class="email-sub-button" type="submit" value="submit" onclick="return validateSubForm()">Subscribe</button>
             
         </div>
         </div>
         
     
-        
-        
-        
-        
-        
+
         
         <h4>Follow us on Social Media.</h4>
         <div class="social-icons">
@@ -248,7 +241,7 @@
             <a class="social fab fa-facebook-f" href="https://www.facebook.com/fnstudoslo" target="_blank" title="facebook"></a>
         </div>
         
-        <p>Copyright © 2019 UN Student Association Norway. &nbsp;&nbsp; All rights reserved. &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Design by Alexander Sem.</p>
+         <a href="#Top">Back To Top</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; © 2019 Website Designed and Developed by <a href="mailto:alexander.sem@icloud.com?Subject=Request to build website">Alexander Sem</a>
         
         
     </footer>
@@ -257,6 +250,11 @@
         
         
 
-    <script src="unsa.js"></script>
+   
 	</body>
+    <script src="scripts/accordian.js"></script>
+    <script src="scripts/IG_api.js"></script>
+    <script src="scripts/UNSA_local.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/newsletter.js"></script>
 </html>

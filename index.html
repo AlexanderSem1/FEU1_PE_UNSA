@@ -6,15 +6,14 @@
         <meta name="keywords" content="UNSA, student association, UNTW, UN Theme week, SDG, student, students, UN Student association" /> 
         <link href="unsa.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 		<title>Home - UN Student Association Norway</title>
 	</head>
 	<body>
         <header class="nav_wrapper nav-bg-img">
             <div class="nav_menu_wrapper">
             <div class="logo">
-                <a href="index.html"><img src="images/UNSA_Logo_Text_White.png" alt="UN Student Association Norway logo" width="300px"></a>
+                <img src="images/UNSA_Logo_Text_White.png" alt="UN Student Association Norway logo" width="300px">
             </div>
             
             <div id="pop-menu" class="top-nav">
@@ -23,73 +22,88 @@
                 <a href="get-involved.html">Get Involved</a>
                 <a href="contact.html">Contact</a>
             </div>
-                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                 <a href="javascript:void(0);" class="icon fa fa-bars" onclick="myFunction()"></a>
             </div>
-            
             <div class="SDG-goal">
-                
-                    <img src="images/E_SDG_13.png" alt="UN SDG Goal number 13 - climate change" width="200px"> 
-                
-                
+                    <img src="images/E_SDG_13.png" alt="UN SDG Goal number 13 - climate change" width="200px">
                     <h1 class="">Climate Action</h1>
-                    <p>It is not too late, but time is running out! </p>
-                
+                    <p>It is not too late, but time is running out! </p>   
             </div> 
         </header>
         
-        <div class="SDG-wheel"><a href="https://sustainabledevelopment.un.org/?menu=1300" target="_blank"><img src="images/E_SDG_logo_No%20UN%20Emb.png"alt="United Nation SDG logo without UN Emblem"></a></div>
-        
-         <hr class="about-us-hr">
-        
-        <div class="below-fold">
+        <div class="below-fold top-header">
             <h1>We are facing the greatest challenges of our time. Be part of a movement for better future! </h1>
-       </div>
-        
-        
-            
+        </div>   
            
         <div class="fact-box-wrapper">    
             <div class="fact-box fact-box1">
-                <i class="fas fa-industry"></i>  
-            <div>
-                <p>50% Reduction in Fossil Energy by 2025</p></div>
+                <a class="fas fa-industry"></a>  
+                <div>
+                    <p>50% Reduction in Fossil Energy by 2025</p>
+                </div>
             </div>
-
             <div class="fact-box fact-box2">
-                <i class="fas fa-plug"></i>
-            <div>
-                <p>Reduce CO2 Emission by half next 10 years</p>
+                <a class="fas fa-plug"></a>
+                <div>
+                    <p>Reduce CO2 Emission by half next 10 years</p>
+                </div>
             </div>
-            </div>
-
             <div class="fact-box fact-box3">
-                <i class="far fa-bell"></i>  
-            <div>
-                <p>All energy to be renewable by 2040</p>
-            </div> 
+                <a class="far fa-bell"></a>  
+                <div>
+                    <p>All energy to be renewable by 2040</p>
+                </div> 
             </div>
         </div>
-
+    
+     <hr class="about-us-hr">
+    
+    <div id="container" class="below-fold">
+        <h1 class="count-down-header">UN Theme Week - Planned for March 1<span class="text-upper">st</span> - 7<span class="text-upper">th</span>, 2020</h1> 
+        <h2 id="cdheader">Count-down has started!</h2><br>
+        
+        <div id="cdtimer">
+            <div class="cdbox">
+                <div id="days" class="cdvalue">-</div>
+                <div class="cdlabel">Days</div>
+            </div>
+            <div class="cdbox">
+                <div id="hours" class="cdvalue">-</div>
+                <div class="cdlabel">Hours</div>
+            </div>
+            <div class="cdbox">
+                <div id="minutes" class="cdvalue">-</div>
+                <div class="cdlabel">Minutes</div>
+            </div>
+            <div class="cdbox">
+                <div id="seconds" class="cdvalue">-</div>
+                <div class="cdlabel">Seconds</div>
+            </div>
+        </div>
+    </div>
+        
+    
+    <div class="SDG-wheel"><a href="https://sustainabledevelopment.un.org/?menu=1300" target="_blank"><img src="images/E_SDG_logo_No%20UN%20Emb.png" alt="United Nation SDG logo without UN Emblem"></a></div>      
         
         <div class="cta-wrapper-grid">
         <div class="cta-wrapper">
             <h2>Find your local student association.</h2>
             <p class="cta-text">UN Student Association in Norway has today 6 local organisation spread out through Norway from Tromsø in North all the way down to Kristiansand in South. </p>
-            <center><a href="https://www.unstudentsoslo.com/About.html"><p class="cta-button">READ MORE</p></a></center>
+            <center><a href="https://www.unstudentsoslo.com/About.html"><p class="cta-button cta-button-2">READ MORE</p></a></center>
 
         </div>
         
         <div class="cta-wrapper">
             <h2>Start your local student association.</h2>
             <p class="cta-text">UN Student Association strives to involve students to mobilize and take action for better future. Get in touch with us if you want to start local organisation in your city.  </p>
-            <center><a href="https://www.unstudentsoslo.com/About.html"><p class="cta-button">CONTACT US</p></a></center>
+            <center><a href="https://www.unstudentsoslo.com/About.html"><p class="cta-button cta-button-2">CONTACT US</p></a></center>
             <p></p>
         </div>
         </div>
         
         <div class="SDG-group-wrapper">
         
-        <div class="below-fold"><h1>Climate is one of the 17 Sustainable Development Goals the UN has defined with clear actions for a better and sustainable future.</h1></div>
+        <div class="below-fold top-header"><h1>Climate is one of the 17 Sustainable Development Goals the UN has defined with clear actions for a better and sustainable future.</h1></div>
         
         <div class="SDG-goals-wrapper">
         <p>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. <br><br>At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership.</p>    
@@ -104,20 +118,23 @@
         
         </div>
         
-        <div class="below-fold"><h1>Meet our Partners and Collaborators</h1></div>
+        <div class="below-fold"><h2>Meet our Partners and Collaborators</h2></div>
         
-        <div class="partner-logos partner-logo-yara"><a href="https://www.yara.com" target="_blank"><img src="images/Yara-logo.png" width="300px"></a>
+        <div class="partner-logos partner-logo-yara"><a href="https://www.yara.com" target="_blank"><img src="images/Yara-logo.png" alt="Logos of UN Student association partner Yara" width="300px"></a>
         
         </div>
         <div class="partner-logos">
-        <img src="images/Collaborators_1.jpg" width="1000px">
+            <img src="images/Collaborators_1.jpg" alt="Logos of UN Student association partners" width="1000px">
         </div>
         <div class="partner-logos">
-        <img src="images/Collaborators_2.jpg" width="1000px">
+            <img src="images/Collaborators_2.jpg" alt="Logos of UN Student association partners" width="1000px">
         </div>
         <div class="partner-logos partner-logo-last">
-        <img src="images/Collaborators_3.jpg" width="1000px">
+            <img src="images/Collaborators_3.jpg" alt="Logos of UN Student association partners" width="1000px">
         </div>
+        
+        
+         <hr class="about-us-hr">
         
         
     <footer class="footer-wrapper">
@@ -130,21 +147,16 @@
         <div class="email-sub-wrapper">
         <div class="email-sub-input">
             <input class="email" type="text" name="email" id="email_ID" placeholder="Your email...">
-             <div><span class="error-sub" id="emailSubError">Enter valid email address.</span></div>
+            <span class="error-sub" id="emailSubError">Enter valid email address.</span>
         </div>
-       
         
         <div class="email-sub-btn">
+            <label for="email_ID">.</label>
             <button class="email-sub-button" type="submit" value="submit" onclick="return validateSubForm()">Subscribe</button>
             
         </div>
         </div>
     
-        
-        
-        
-        
-        
         
         <h4>Follow us on Social Media.</h4>
         <div class="social-icons">
@@ -154,15 +166,14 @@
             <a class="social fab fa-facebook-f" href="https://www.facebook.com/fnstudoslo" target="_blank" title="facebook"></a>
         </div>
         
-        <p>Copyright © 2019 UN Student Association Norway. All rights reserved. Design by Alexander Sem.</p>
+         <a href="#Top">Back To Top</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; © 2019 Website Designed and Developed by <a href="mailto:alexander.sem@icloud.com?Subject=Request to build website">Alexander Sem</a>
         
         
     </footer>
-        
-        
-        
-        
-
-    <script src="unsa.js"></script>
+     
 	</body>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/countdown.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/newsletter.js"></script>
 </html>
