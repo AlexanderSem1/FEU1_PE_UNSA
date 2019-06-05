@@ -201,7 +201,8 @@ body{
 }
 
 .text-upper{
-    text-decoration: underline; 
+    vertical-align: super;
+    font-size: smaller; 
 }
 
 
@@ -753,47 +754,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Only for Contact form width */ 
 @media (min-width: 500px){
     
@@ -807,7 +767,6 @@ a{
     
     
 }
-
 
 
 
@@ -892,7 +851,7 @@ a{
     
 .nav-bg-img{
     background-image:url(images/climate_wide.jpg);  
-    height: 1000px; 
+    height: 750px; 
 }
     
 
